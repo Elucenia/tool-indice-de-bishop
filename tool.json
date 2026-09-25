@@ -1,0 +1,277 @@
+{
+  "tool": {
+    "id": "indice-de-bishop",
+    "title": "Índice de Bishop",
+    "short": "Colo uterino favorável para indução do parto",
+    "spec": [
+      "ginecologia-e-obstetricia"
+    ],
+    "tier": 1,
+    "desc": "Calcule o índice de Bishop (dilatação, apagamento, altura da apresentação, consistência e posição do colo) e veja se o colo é favorável para a indução do parto.",
+    "lead": "Avalia pelo toque vaginal se o colo uterino está favorável à indução do parto e orienta a necessidade de preparo cervical.",
+    "fields": [
+      [
+        "dil",
+        "Dilatação",
+        "radio",
+        {
+          "opts": {
+            "0": "Fechado",
+            "1": "1 a 2 cm",
+            "2": "3 a 4 cm",
+            "3": "≥ 5 cm"
+          }
+        }
+      ],
+      [
+        "apag",
+        "Apagamento",
+        "radio",
+        {
+          "opts": {
+            "0": "0 a 30%",
+            "1": "40 a 50%",
+            "2": "60 a 70%",
+            "3": "≥ 80%"
+          }
+        }
+      ],
+      [
+        "alt",
+        "Altura da apresentação (De Lee)",
+        "radio",
+        {
+          "opts": {
+            "0": "−3",
+            "1": "−2",
+            "2": "−1 ou 0",
+            "3": "+1 ou +2"
+          }
+        }
+      ],
+      [
+        "cons",
+        "Consistência do colo",
+        "radio",
+        {
+          "opts": {
+            "0": "Firme",
+            "1": "Média",
+            "2": "Amolecida"
+          }
+        }
+      ],
+      [
+        "pos",
+        "Posição do colo",
+        "radio",
+        {
+          "opts": {
+            "0": "Posterior",
+            "1": "Intermediária",
+            "2": "Anterior"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Índice de Bishop",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "high",
+          "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
+          "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina."
+        ],
+        [
+          7,
+          "mid",
+          "Colo intermediário (7 a 8)",
+          "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical."
+        ],
+        [
+          9,
+          "low",
+          "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+          "Pode-se induzir com ocitocina e/ou amniotomia."
+        ]
+      ]
+    },
+    "formula": "<p>Soma de 5 itens do toque vaginal: dilatação (0 a 3), apagamento (0 a 3), altura da apresentação (0 a 3), consistência (0 a 2) e posição do colo (0 a 2). Total de 0 a 13.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação (ACOG)"
+      ],
+      [
+        "0 a 6",
+        "Colo desfavorável: preparo cervical"
+      ],
+      [
+        "7 a 8",
+        "Intermediário"
+      ],
+      [
+        "&gt; 8",
+        "Favorável: probabilidade de parto vaginal semelhante à do trabalho de parto espontâneo"
+      ]
+    ],
+    "tips": [
+      "O misoprostol é contraindicado para preparo cervical em quem tem cesárea anterior (risco de rotura uterina): prefira métodos mecânicos, como a sonda de Foley.",
+      "Dilatação e altura da apresentação são os itens que mais pesam na predição do sucesso da indução.",
+      "Bishop derivou o índice em multíparas a termo; em nulíparas, a chance de cesárea após indução com colo desfavorável é maior.",
+      "Reavalie o índice após cada etapa do preparo cervical para decidir quando iniciar a ocitocina."
+    ],
+    "sources": [
+      [
+        "Bishop EH. Pelvic scoring for elective induction. Obstet Gynecol, 1964.",
+        "https://pubmed.ncbi.nlm.nih.gov/14199536/"
+      ],
+      [
+        "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 107: Induction of Labor. Obstet Gynecol, 2009.",
+        "https://doi.org/10.1097/AOG.0b013e3181b48ef5"
+      ]
+    ],
+    "cases": [
+      [
+        "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        {
+          "dil": "1",
+          "apag": "1",
+          "alt": "1",
+          "cons": "0",
+          "pos": "0"
+        },
+        {
+          "score": 3,
+          "level": "high"
+        }
+      ],
+      [
+        "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        {
+          "dil": "1",
+          "apag": "2",
+          "alt": "2",
+          "cons": "2",
+          "pos": "0"
+        },
+        {
+          "score": 7,
+          "level": "mid"
+        }
+      ],
+      [
+        "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        {
+          "dil": "2",
+          "apag": "2",
+          "alt": "2",
+          "cons": "2",
+          "pos": "1"
+        },
+        {
+          "score": 9,
+          "level": "low"
+        }
+      ],
+      [
+        "Todos os itens no máximo: 13 pontos",
+        {
+          "dil": "3",
+          "apag": "3",
+          "alt": "3",
+          "cons": "2",
+          "pos": "2"
+        },
+        {
+          "score": 13,
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "Índice de Bishop",
+      "fields": [
+        [
+          "dil",
+          "radio",
+          0
+        ],
+        [
+          "apag",
+          "radio",
+          0
+        ],
+        [
+          "alt",
+          "radio",
+          0
+        ],
+        [
+          "cons",
+          "radio",
+          0
+        ],
+        [
+          "pos",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "high",
+          "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
+          "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina."
+        ],
+        [
+          7,
+          "mid",
+          "Colo intermediário (7 a 8)",
+          "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical."
+        ],
+        [
+          9,
+          "low",
+          "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+          "Pode-se induzir com ocitocina e/ou amniotomia."
+        ]
+      ]
+    },
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}

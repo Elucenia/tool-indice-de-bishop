@@ -1,0 +1,90 @@
+[
+  {
+    "label": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+    "input": {
+      "dil": "1",
+      "apag": "1",
+      "alt": "1",
+      "cons": "0",
+      "pos": "0"
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "dil": "1",
+      "apag": "1",
+      "alt": "1",
+      "cons": "0",
+      "pos": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+    "input": {
+      "dil": "1",
+      "apag": "2",
+      "alt": "2",
+      "cons": "2",
+      "pos": "0"
+    },
+    "expected": {
+      "score": 7,
+      "level": "mid"
+    },
+    "originalInput": {
+      "dil": "1",
+      "apag": "2",
+      "alt": "2",
+      "cons": "2",
+      "pos": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+    "input": {
+      "dil": "2",
+      "apag": "2",
+      "alt": "2",
+      "cons": "2",
+      "pos": "1"
+    },
+    "expected": {
+      "score": 9,
+      "level": "low"
+    },
+    "originalInput": {
+      "dil": "2",
+      "apag": "2",
+      "alt": "2",
+      "cons": "2",
+      "pos": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os itens no máximo: 13 pontos",
+    "input": {
+      "dil": "3",
+      "apag": "3",
+      "alt": "3",
+      "cons": "2",
+      "pos": "2"
+    },
+    "expected": {
+      "score": 13,
+      "level": "low"
+    },
+    "originalInput": {
+      "dil": "3",
+      "apag": "3",
+      "alt": "3",
+      "cons": "2",
+      "pos": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]
