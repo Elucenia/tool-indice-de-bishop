@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-indice-de-bishop · Elucenia · https://github.com/Elucenia/tool-indice-de-bishop
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"indice-de-bishop","title":"Índice de Bishop","fields":[["dil","Dilatação","radio",{"opts":{"0":"Fechado","1":"1 a 2 cm","2":"3 a 4 cm","3":"≥ 5 cm"}}],["apag","Apagamento","radio",{"opts":{"0":"0 a 30%","1":"40 a 50%","2":"60 a 70%","3":"≥ 80%"}}],["alt","Altura da apresentação (De Lee)","radio",{"opts":{"0":"−3","1":"−2","2":"−1 ou 0","3":"+1 ou +2"}}],["cons","Consistência do colo","radio",{"opts":{"0":"Firme","1":"Média","2":"Amolecida"}}],["pos","Posição do colo","radio",{"opts":{"0":"Posterior","1":"Intermediária","2":"Anterior"}}]],"config":{"unit":"","label":"Índice de Bishop","fields":[["dil","radio",0],["apag","radio",0],["alt","radio",0],["cons","radio",0],["pos","radio",0]],"bands":[[0,"high","Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina","Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina."],[7,"mid","Colo intermediário (7 a 8)","A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical."],[9,"low","Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo","Pode-se induzir com ocitocina e/ou amniotomia."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
