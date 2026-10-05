@@ -3,12 +3,12 @@
     "id": "indice-de-bishop",
     "title": "Índice de Bishop",
     "short": "Colo uterino favorável para indução do parto",
+    "desc": "Calcule o índice de Bishop (dilatação, apagamento, altura da apresentação, consistência e posição do colo) e veja se o colo é favorável para a indução do parto.",
+    "lead": "Avalia pelo toque vaginal se o colo uterino está favorável à indução do parto e orienta a necessidade de preparo cervical.",
+    "kind": "Escore",
     "spec": [
       "ginecologia-e-obstetricia"
     ],
-    "tier": 1,
-    "desc": "Calcule o índice de Bishop (dilatação, apagamento, altura da apresentação, consistência e posição do colo) e veja se o colo é favorável para a indução do parto.",
-    "lead": "Avalia pelo toque vaginal se o colo uterino está favorável à indução do parto e orienta a necessidade de preparo cervical.",
     "fields": [
       [
         "dil",
@@ -74,55 +74,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Índice de Bishop",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "high",
-          "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
-          "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina."
-        ],
-        [
-          7,
-          "mid",
-          "Colo intermediário (7 a 8)",
-          "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical."
-        ],
-        [
-          9,
-          "low",
-          "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
-          "Pode-se induzir com ocitocina e/ou amniotomia."
-        ]
-      ]
-    },
     "formula": "<p>Soma de 5 itens do toque vaginal: dilatação (0 a 3), apagamento (0 a 3), altura da apresentação (0 a 3), consistência (0 a 2) e posição do colo (0 a 2). Total de 0 a 13.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação (ACOG)"
-      ],
-      [
-        "0 a 6",
-        "Colo desfavorável: preparo cervical"
-      ],
-      [
-        "7 a 8",
-        "Intermediário"
-      ],
-      [
-        "&gt; 8",
-        "Favorável: probabilidade de parto vaginal semelhante à do trabalho de parto espontâneo"
-      ]
-    ],
-    "tips": [
-      "O misoprostol é contraindicado para preparo cervical em quem tem cesárea anterior (risco de rotura uterina): prefira métodos mecânicos, como a sonda de Foley.",
-      "Dilatação e altura da apresentação são os itens que mais pesam na predição do sucesso da indução.",
-      "Bishop derivou o índice em multíparas a termo; em nulíparas, a chance de cesárea após indução com colo desfavorável é maior.",
-      "Reavalie o índice após cada etapa do preparo cervical para decidir quando iniciar a ocitocina."
-    ],
     "sources": [
       [
         "Bishop EH. Pelvic scoring for elective induction. Obstet Gynecol, 1964.",
@@ -131,6 +83,14 @@
       [
         "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 107: Induction of Labor. Obstet Gynecol, 2009.",
         "https://doi.org/10.1097/AOG.0b013e3181b48ef5"
+      ],
+      [
+        "Bishop1964",
+        "https://epp.evidencio.com/uploads/files/models/files/1293/0bf17b-Bishop%20EH%2C%201964.pdf"
+      ],
+      [
+        "ACOG patient FAQ,current retrieval2026-10-04",
+        "https://www.acog.org/womens-health/faqs/labor-induction"
       ]
     ],
     "cases": [
@@ -191,59 +151,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "Índice de Bishop",
-      "fields": [
-        [
-          "dil",
-          "radio",
-          0
-        ],
-        [
-          "apag",
-          "radio",
-          0
-        ],
-        [
-          "alt",
-          "radio",
-          0
-        ],
-        [
-          "cons",
-          "radio",
-          0
-        ],
-        [
-          "pos",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "high",
-          "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
-          "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina."
-        ],
-        [
-          7,
-          "mid",
-          "Colo intermediário (7 a 8)",
-          "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical."
-        ],
-        [
-          9,
-          "low",
-          "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
-          "Pode-se induzir com ocitocina e/ou amniotomia."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -252,17 +159,490 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:23.524Z",
+      "total": 576,
+      "passed": 576,
+      "sourceRowCount": 576,
+      "uniqueApiInputCount": 576,
+      "sourceContextCount": 576,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "30fd31655deec59f0ea8d32b78dd06ca4ed85cf6b1270f1681c3dc7eac2f45fd",
+        "total": 576,
+        "bankRowCount": 576,
+        "uniqueApiInputCount": 576,
+        "sourceContextCount": 576,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+            "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+          "sha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 576,
+        "uniqueApiInputs": 576,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+          "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "indice-de-bishop",
+          "declaredEdition": "Bishop 1964:5 componentes 0–13; apagamento percentual, sem versão comprimento cervical",
+          "readRecords": [
+            {
+              "id": "indice-de-bishop",
+              "edition": "Bishop1964 Obstetrics and Gynecology24(2):266–268, Figure1 p267",
+              "url": "https://epp.evidencio.com/uploads/files/models/files/1293/0bf17b-Bishop%20EH%2C%201964.pdf",
+              "file": "bishop-1964-original-final27.pdf",
+              "readPages": [
+                1,
+                2
+              ],
+              "observations": "Five assigned components are summed: dilatation, effacement and station each0–3; consistency and position each0–2. Maximum13. Original Figure1 highest dilation band5–6cm differs from the current local UI ≥5cm; original highest effacement entry80 differs from current ≥80. Those semantic extensions are not approved by assigned-point enumeration.",
+              "unchecked": [
+                "Original third page not included in this new visual reading.",
+                "Clinical examination, cervical-band continuity, current indication for induction, favorable-score threshold and population extensions are not validated.",
+                "Original restricted multiparity/pregnancy context is documented, not adopted as current clinical guidance."
+              ],
+              "sha256": "e8f814c64388b48daf455baf6a0186ed405b3966ce8960a04bb9d8e2b4b3f5ee",
+              "visualEvidence": [
+                {
+                  "file": "bishop-1964-original-final27-p1.png",
+                  "sha256": "ae26e71a11e0780a7ec4f69f86dfb5568f102300ffb464e31a1282011ab5c496"
+                },
+                {
+                  "file": "bishop-1964-original-final27-p2.png",
+                  "sha256": "8ce628a4fcdb336851c714993df575d94c77c22475c8367321b8ca0054744724"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/three-further-score-primary-review-final27.json",
+            "sha256": "49449018ee564d2d981ad126b2fb703ee1c78124d83e122bc12ec256c7f5d0f0"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+      "evidenceSha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/three-further-score-source-independent-review-western-final27-r2.json",
+          "sha256": "8f28bb21326d78494fc35cd16dfe612d77337f815fccb318eab269a44a9c4999"
+        },
+        "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 1728,
+      "actualVmExecutions": 1728,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/indice-de-bishop/calculator.js",
+          "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Bishop 1964:5 componentes 0–13; apagamento percentual, sem versão comprimento cervical",
+    "implementationVersion": "indice-de-bishop@native-2026-10-03+2ea8b553b045",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14199536/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Soma de 5 itens do toque vaginal: dilatação (0 a 3), apagamento (0 a 3), altura da apresentação (0 a 3), consistência (0 a 2) e posição do colo (0 a 2). Total de 0 a 13.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "dil",
+            "label": "Dilatação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Fechado",
+              "1": "1 a 2 cm",
+              "2": "3 a 4 cm",
+              "3": "≥ 5 cm"
+            }
+          },
+          {
+            "key": "apag",
+            "label": "Apagamento",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 a 30%",
+              "1": "40 a 50%",
+              "2": "60 a 70%",
+              "3": "≥ 80%"
+            }
+          },
+          {
+            "key": "alt",
+            "label": "Altura da apresentação (De Lee)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "−3",
+              "1": "−2",
+              "2": "−1 ou 0",
+              "3": "+1 ou +2"
+            }
+          },
+          {
+            "key": "cons",
+            "label": "Consistência do colo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Firme",
+              "1": "Média",
+              "2": "Amolecida"
+            }
+          },
+          {
+            "key": "pos",
+            "label": "Posição do colo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Posterior",
+              "1": "Intermediária",
+              "2": "Anterior"
+            }
+          }
+        ],
+        "hash": "0da999c187cbce5fcec3b4f63b9cf8a63aad4364902e141d62d32bc57a7a9524"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Bishop EH. Pelvic scoring for elective induction. Obstet Gynecol, 1964.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14199536/",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "PELVIC SCORING FOR ELECTIVE INDUCTION.",
+            "year": "1964",
+            "firstPublicationDate": "1964-08-01",
+            "pmid": "14199536",
+            "journal": "Obstetrics and gynecology",
+            "authors": "BISHOP EH."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14199536/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 107: Induction of Labor. Obstet Gynecol, 2009.",
+          "url": "https://doi.org/10.1097/AOG.0b013e3181b48ef5",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "ACOG Practice Bulletin No. 107: Induction of labor.",
+            "year": "2009",
+            "firstPublicationDate": "2009-08-01",
+            "doi": "10.1097/aog.0b013e3181b48ef5",
+            "pmid": "19623003",
+            "journal": "Obstetrics and gynecology",
+            "authors": ""
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/19623003/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:23.524Z",
+        "total": 576,
+        "passed": 576,
+        "sourceRowCount": 576,
+        "uniqueApiInputCount": 576,
+        "sourceContextCount": 576,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "30fd31655deec59f0ea8d32b78dd06ca4ed85cf6b1270f1681c3dc7eac2f45fd",
+          "total": 576,
+          "bankRowCount": 576,
+          "uniqueApiInputCount": 576,
+          "sourceContextCount": 576,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+              "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+            "sha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 576,
+          "uniqueApiInputs": 576,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+            "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "indice-de-bishop",
+            "declaredEdition": "Bishop 1964:5 componentes 0–13; apagamento percentual, sem versão comprimento cervical",
+            "readRecords": [
+              {
+                "id": "indice-de-bishop",
+                "edition": "Bishop1964 Obstetrics and Gynecology24(2):266–268, Figure1 p267",
+                "url": "https://epp.evidencio.com/uploads/files/models/files/1293/0bf17b-Bishop%20EH%2C%201964.pdf",
+                "file": "bishop-1964-original-final27.pdf",
+                "readPages": [
+                  1,
+                  2
+                ],
+                "observations": "Five assigned components are summed: dilatation, effacement and station each0–3; consistency and position each0–2. Maximum13. Original Figure1 highest dilation band5–6cm differs from the current local UI ≥5cm; original highest effacement entry80 differs from current ≥80. Those semantic extensions are not approved by assigned-point enumeration.",
+                "unchecked": [
+                  "Original third page not included in this new visual reading.",
+                  "Clinical examination, cervical-band continuity, current indication for induction, favorable-score threshold and population extensions are not validated.",
+                  "Original restricted multiparity/pregnancy context is documented, not adopted as current clinical guidance."
+                ],
+                "sha256": "e8f814c64388b48daf455baf6a0186ed405b3966ce8960a04bb9d8e2b4b3f5ee",
+                "visualEvidence": [
+                  {
+                    "file": "bishop-1964-original-final27-p1.png",
+                    "sha256": "ae26e71a11e0780a7ec4f69f86dfb5568f102300ffb464e31a1282011ab5c496"
+                  },
+                  {
+                    "file": "bishop-1964-original-final27-p2.png",
+                    "sha256": "8ce628a4fcdb336851c714993df575d94c77c22475c8367321b8ca0054744724"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/three-further-score-primary-review-final27.json",
+              "sha256": "49449018ee564d2d981ad126b2fb703ee1c78124d83e122bc12ec256c7f5d0f0"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+        "evidenceSha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/three-further-score-source-independent-review-western-final27-r2.json",
+            "sha256": "8f28bb21326d78494fc35cd16dfe612d77337f815fccb318eab269a44a9c4999"
+          },
+          "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 1728,
+        "actualVmExecutions": 1728,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/indice-de-bishop/calculator.js",
+            "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+    },
+    "limits": "O Bishop clássico descreve preparo cervical pelos cinco componentes do exame e não autoriza, sozinho, indução do parto. O artigo de 1964 estudou contexto histórico de multíparas a partir de 36 semanas; isso não constitui indicação atual de indução eletiva nessa idade. A orientação institucional ACOG consultada exige avaliar indicações e contraindicações obstétricas e não realizar indução eletiva antes de 39 semanas. Esta versão usa apagamento cervical em porcentagem, não uma versão modificada baseada no comprimento cervical.",
+    "limitsEvidence": {
+      "status": "primary-indexed-sections-read-direct-full-access-incomplete",
+      "sources": [
+        {
+          "url": "https://epp.evidencio.com/uploads/files/models/files/1293/0bf17b-Bishop%20EH%2C%201964.pdf",
+          "edition": "Bishop1964",
+          "readScope": "Original first-page indexed text:historical multiparous cohort and pregnancy≥36weeks. PDF text extraction only two lines; screenshot attempts did not yield a readable image. Full chart not read."
+        },
+        {
+          "url": "https://www.acog.org/womens-health/faqs/labor-induction",
+          "edition": "ACOG patient FAQ,current retrieval2026-10-04",
+          "readScope": "Institutional indexed sections:classic0–13 cervical readiness, induction contraindications and elective induction not before39weeks. Direct opening failed."
+        },
+        {
+          "url": "https://doi.org/10.1097/AOG.0b013e3181b48ef5",
+          "edition": "ACOGPracticeBulletin107,2009",
+          "readScope": "Identity only; full bulletin not read."
+        }
+      ],
+      "populationScope": "Clinical cervical readiness assessment; original study population not current induction eligibility.",
+      "remainingChecks": [
+        "Original full chart and full ACOG107 bulletin not read.",
+        "ACOG current FAQ available through indexed primary text, not direct full page."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
+    "bytes": 5222,
+    "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "8fa2e1f5669841e9f0ac61fc90f2dd8c811ef4eb6ba482b91c1e0f74f7d8ceaf",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "7fcc1048ea779fb54d516e166303a458353c77c8aec3ce5b7cbdfb9b691cb79f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "7fcc1048ea779fb54d516e166303a458353c77c8aec3ce5b7cbdfb9b691cb79f",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
