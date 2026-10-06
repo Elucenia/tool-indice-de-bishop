@@ -100,3 +100,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina
+
+Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina.
+
+
+### 2
+
+Colo intermediário (7 a 8)
+
+A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical.
+
+
+### 3
+
+Colo favorável (> 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo
+
+Pode-se induzir com ocitocina e/ou amniotomia.
+
+
+### 4
+
+Colo favorável (> 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo
+
+Pode-se induzir com ocitocina e/ou amniotomia.
+

@@ -100,3 +100,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Unfavorable cervix (≤ 6): indicate cervical preparation before oxytocin
+
+Preparation methods: misoprostol, Foley catheter, or dinoprostone, according to the service protocol and uterine scar.
+
+
+### 2
+
+Intermediate cervix (7 to 8)
+
+The chance of vaginal delivery after induction is lower than with a favorable cervix; individualize cervical preparation.
+
+
+### 3
+
+Favorable cervix (> 8): chance of vaginal delivery similar to that of spontaneous labor
+
+May be induced with oxytocin and/or amniotomy.
+
+
+### 4
+
+Favorable cervix (> 8): chance of vaginal delivery similar to that of spontaneous labor
+
+May be induced with oxytocin and/or amniotomy.
+

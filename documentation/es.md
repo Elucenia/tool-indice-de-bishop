@@ -100,3 +100,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Cuello uterino desfavorable (≤ 6): indicar preparación cervical antes de la oxitocina
+
+Métodos de preparación: misoprostol, sonda de Foley o dinoprostona, según el protocolo del servicio y la cicatriz uterina.
+
+
+### 2
+
+Cuello uterino intermedio (7 a 8)
+
+La probabilidad de parto vaginal después de la inducción es menor que con un cuello favorable; individualizar la preparación cervical.
+
+
+### 3
+
+Cuello uterino favorable (> 8): probabilidad de parto vaginal similar a la del trabajo de parto espontáneo
+
+Se puede inducir con oxitocina y/o amniotomía.
+
+
+### 4
+
+Cuello uterino favorable (> 8): probabilidad de parto vaginal similar a la del trabajo de parto espontáneo
+
+Se puede inducir con oxitocina y/o amniotomía.
+

@@ -1,0 +1,707 @@
+{
+  "id": "indice-de-bishop",
+  "implementationVersion": "indice-de-bishop@native-2026-10-05+e86e245c6cb5",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Colo intermediário (7 a 8)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Colo favorável (> 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pode-se induzir com ocitocina e/ou amniotomia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Colo favorável (> 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pode-se induzir com ocitocina e/ou amniotomia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unfavorable cervix (≤ 6): indicate cervical preparation before oxytocin",
+            "locale": "en",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "Preparation methods: misoprostol, Foley catheter, or dinoprostone, according to the service protocol and uterine scar.",
+            "locale": "en",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate cervix (7 to 8)",
+            "locale": "en",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "The chance of vaginal delivery after induction is lower than with a favorable cervix; individualize cervical preparation.",
+            "locale": "en",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Favorable cervix (> 8): chance of vaginal delivery similar to that of spontaneous labor",
+            "locale": "en",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "May be induced with oxytocin and/or amniotomy.",
+            "locale": "en",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Favorable cervix (> 8): chance of vaginal delivery similar to that of spontaneous labor",
+            "locale": "en",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "May be induced with oxytocin and/or amniotomy.",
+            "locale": "en",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cuello uterino desfavorable (≤ 6): indicar preparación cervical antes de la oxitocina",
+            "locale": "es",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "Métodos de preparación: misoprostol, sonda de Foley o dinoprostona, según el protocolo del servicio y la cicatriz uterina.",
+            "locale": "es",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cuello uterino intermedio (7 a 8)",
+            "locale": "es",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "La probabilidad de parto vaginal después de la inducción es menor que con un cuello favorable; individualizar la preparación cervical.",
+            "locale": "es",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cuello uterino favorable (> 8): probabilidad de parto vaginal similar a la del trabajo de parto espontáneo",
+            "locale": "es",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Se puede inducir con oxitocina y/o amniotomía.",
+            "locale": "es",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cuello uterino favorable (> 8): probabilidad de parto vaginal similar a la del trabajo de parto espontáneo",
+            "locale": "es",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Se puede inducir con oxitocina y/o amniotomía.",
+            "locale": "es",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Col défavorable (≤ 6) : indiquer une préparation cervicale avant l’ocytocine",
+            "locale": "fr",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "Méthodes de préparation : misoprostol, sonde de Foley ou dinoprostone, selon le protocole du service et la cicatrice utérine.",
+            "locale": "fr",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Col intermédiaire (7 à 8)",
+            "locale": "fr",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "La probabilité d’un accouchement vaginal après déclenchement est inférieure à celle observée avec un col favorable ; individualiser la préparation cervicale.",
+            "locale": "fr",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Col favorable (> 8) : probabilité d’un accouchement vaginal similaire à celle du travail spontané",
+            "locale": "fr",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Peut être déclenché par ocytocine et/ou amniotomie.",
+            "locale": "fr",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Col favorable (> 8) : probabilité d’un accouchement vaginal similaire à celle du travail spontané",
+            "locale": "fr",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Peut être déclenché par ocytocine et/ou amniotomie.",
+            "locale": "fr",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ungünstiger Muttermund (≤ 6): vor Oxytocin eine Zervixvorbereitung angeben",
+            "locale": "de",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "Vorbereitungsmethoden: Misoprostol, Foley-Katheter oder Dinoproston, entsprechend dem Protokoll der Einrichtung und der Uterusnarbe.",
+            "locale": "de",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlerer Muttermund (7 bis 8)",
+            "locale": "de",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "Die Wahrscheinlichkeit einer vaginalen Entbindung nach der Einleitung ist geringer als bei einem günstigen Muttermund; die Zervixvorbereitung individuell anpassen.",
+            "locale": "de",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Günstiger Muttermund (> 8): Wahrscheinlichkeit einer vaginalen Entbindung ähnlich wie bei spontanem Wehenbeginn",
+            "locale": "de",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Kann mit Oxytocin und/oder Amniotomie eingeleitet werden.",
+            "locale": "de",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Günstiger Muttermund (> 8): Wahrscheinlichkeit einer vaginalen Entbindung ähnlich wie bei spontanem Wehenbeginn",
+            "locale": "de",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Kann mit Oxytocin und/oder Amniotomie eingeleitet werden.",
+            "locale": "de",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervice sfavorevole (≤ 6): indicare la preparazione cervicale prima dell’ossitocina",
+            "locale": "it",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "Metodi di preparazione: misoprostolo, catetere di Foley o dinoprostone, secondo il protocollo del servizio e la cicatrice uterina.",
+            "locale": "it",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervice intermedia (7 a 8)",
+            "locale": "it",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "La probabilità di parto vaginale dopo induzione è inferiore rispetto a quella con cervice favorevole; individualizzare la preparazione cervicale.",
+            "locale": "it",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervice favorevole (> 8): probabilità di parto vaginale simile a quella del travaglio spontaneo",
+            "locale": "it",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Può essere indotta con ossitocina e/o amniotomia.",
+            "locale": "it",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervice favorevole (> 8): probabilità di parto vaginale simile a quella del travaglio spontaneo",
+            "locale": "it",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "Può essere indotta con ossitocina e/o amniotomia.",
+            "locale": "it",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "عنق رحم غير ملائم (≤ 6): يُنصح بالتهيئة العنقية قبل الأوكسيتوسين",
+            "locale": "ar",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "طرق التحضير: ميسوبروستول، قسطرة فولي أو دينوبروستون، وفقًا لبروتوكول الخدمة والندبة الرحمية.",
+            "locale": "ar",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "عنق رحم متوسط (7 إلى 8)",
+            "locale": "ar",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "إن احتمال الولادة المهبلية بعد التحريض أقل منه مع عنق رحم ملائم؛ يجب تكييف التهيئة العنقية بشكل فردي.",
+            "locale": "ar",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "عنق رحم ملائم (> 8): احتمال الولادة المهبلية مماثل لاحتمالها في المخاض العفوي",
+            "locale": "ar",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "يمكن تحريضه بالأوكسيتوسين و/أو بضع السلى.",
+            "locale": "ar",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "عنق رحم ملائم (> 8): احتمال الولادة المهبلية مماثل لاحتمالها في المخاض العفوي",
+            "locale": "ar",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "يمكن تحريضه بالأوكسيتوسين و/أو بضع السلى.",
+            "locale": "ar",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "宫颈条件不佳（≤ 6）：在使用催产素前进行宫颈准备",
+            "locale": "zh",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "准备方法：米索前列醇、Foley导管或地诺前列酮，依据科室方案和子宫瘢痕。",
+            "locale": "zh",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "宫颈中等（7到8）",
+            "locale": "zh",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "引产后阴道分娩的可能性低于宫颈条件良好者；应个体化进行宫颈准备。",
+            "locale": "zh",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "宫颈条件良好（> 8）：阴道分娩的可能性与自然临产相似",
+            "locale": "zh",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "可使用催产素和/或人工破膜进行引产。",
+            "locale": "zh",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "宫颈条件良好（> 8）：阴道分娩的可能性与自然临产相似",
+            "locale": "zh",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "可使用催产素和/或人工破膜进行引产。",
+            "locale": "zh",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "好ましくない子宮頸部（≤ 6）：オキシトシン前に頸管熟化を行う",
+            "locale": "ja",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "準備方法：施設のプロトコルおよび子宮瘢痕に応じて、ミソプロストール、Foleyカテーテル、またはジノプロストン。",
+            "locale": "ja",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間的な子宮頸部（7～8）",
+            "locale": "ja",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "誘発後の経腟分娩の可能性は、好ましい子宮頸部の場合より低い；頸管熟化は個別化する。",
+            "locale": "ja",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "好ましい子宮頸部（> 8）：経腟分娩の可能性は自然陣痛と同様",
+            "locale": "ja",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "オキシトシンおよび/または人工破膜で誘発できる。",
+            "locale": "ja",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "好ましい子宮頸部（> 8）：経腟分娩の可能性は自然陣痛と同様",
+            "locale": "ja",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "オキシトシンおよび/または人工破膜で誘発できる。",
+            "locale": "ja",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अप्रसन्न गर्भाशय ग्रीवा (≤ 6): ऑक्सीटोसिन से पहले सर्वाइकल तैयारी का संकेत दें",
+            "locale": "hi",
+            "template": "documented-authored-5d092eec75cecb62bbf4"
+          },
+          "note": {
+            "text": "तैयारी के तरीके: सेवा प्रोटोकॉल और गर्भाशय की निशानी के अनुसार मिसोप्रोस्टोल, फोले कैथेटर या डिनोप्रोस्टोन।",
+            "locale": "hi",
+            "template": "documented-authored-c6ac5d525f7d4d368761"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम गर्भाशय ग्रीवा (7 से 8)",
+            "locale": "hi",
+            "template": "documented-authored-89647b0441f7bf8b6a49"
+          },
+          "note": {
+            "text": "इंडक्शन के बाद योनि प्रसव की संभावना अनुकूल गर्भाशय ग्रीवा की तुलना में कम होती है; सर्वाइकल तैयारी को व्यक्तिगत करें।",
+            "locale": "hi",
+            "template": "documented-authored-cee21e15a439943a6f61"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अनुकूल गर्भाशय ग्रीवा (> 8): योनि प्रसव की संभावना स्वतःस्फूर्त प्रसव के समान",
+            "locale": "hi",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "ऑक्सीटोसिन और/या एम्नियोटॉमी के साथ प्रेरित किया जा सकता है।",
+            "locale": "hi",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos os itens no máximo: 13 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अनुकूल गर्भाशय ग्रीवा (> 8): योनि प्रसव की संभावना स्वतःस्फूर्त प्रसव के समान",
+            "locale": "hi",
+            "template": "documented-authored-4bffa6ce729bf4a91e05"
+          },
+          "note": {
+            "text": "ऑक्सीटोसिन और/या एम्नियोटॉमी के साथ प्रेरित किया जा सकता है।",
+            "locale": "hi",
+            "template": "documented-authored-e425b611fd5aa56148ad"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

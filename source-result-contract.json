@@ -1,0 +1,228 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-de-bishop",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "4fba726b348d22c0fb55c4814cc31a1a66879b46",
+    "oldEngineSha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629",
+    "currentEngineSha256": "e86e245c6cb570597041eb6d41797d92c00f2747c1d3f86c3f9711552b361941"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Colo 1-2 cm, 40-50%, −2, firme, posterior: 3 pontos (desfavorável)",
+      "input": {
+        "dil": "1",
+        "apag": "1",
+        "alt": "1",
+        "cons": "0",
+        "pos": "0"
+      },
+      "publicOutput": {
+        "id": "indice-de-bishop",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "level": "high",
+        "verdict": "Colo desfavorável (≤ 6): indicar preparo cervical antes da ocitocina",
+        "note": "Métodos de preparo: misoprostol, sonda de Foley ou dinoprostona, conforme o protocolo do serviço e a cicatriz uterina.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Colo 1-2 cm, 60-70%, −1, amolecido, posterior: 7 pontos (intermediário, limite)",
+      "input": {
+        "dil": "1",
+        "apag": "2",
+        "alt": "2",
+        "cons": "2",
+        "pos": "0"
+      },
+      "publicOutput": {
+        "id": "indice-de-bishop",
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "level": "mid",
+        "verdict": "Colo intermediário (7 a 8)",
+        "note": "A chance de parto vaginal após indução é menor do que com colo favorável; individualize o preparo cervical.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Colo 3-4 cm, 60-70%, −1, amolecido, intermediário: 9 pontos (favorável, limite)",
+      "input": {
+        "dil": "2",
+        "apag": "2",
+        "alt": "2",
+        "cons": "2",
+        "pos": "1"
+      },
+      "publicOutput": {
+        "id": "indice-de-bishop",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "raw": {
+          "score": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "level": "low",
+        "verdict": "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+        "note": "Pode-se induzir com ocitocina e/ou amniotomia.",
+        "raw": {
+          "score": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os itens no máximo: 13 pontos",
+      "input": {
+        "dil": "3",
+        "apag": "3",
+        "alt": "3",
+        "cons": "2",
+        "pos": "2"
+      },
+      "publicOutput": {
+        "id": "indice-de-bishop",
+        "main": [
+          "13",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "raw": {
+          "score": 13
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 13,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "13",
+          "pontos"
+        ],
+        "label": "Índice de Bishop",
+        "level": "low",
+        "verdict": "Colo favorável (&gt; 8): chance de parto vaginal semelhante à do trabalho de parto espontâneo",
+        "note": "Pode-se induzir com ocitocina e/ou amniotomia.",
+        "raw": {
+          "score": 13
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

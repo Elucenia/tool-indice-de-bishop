@@ -100,3 +100,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Ungünstiger Muttermund (≤ 6): vor Oxytocin eine Zervixvorbereitung angeben
+
+Vorbereitungsmethoden: Misoprostol, Foley-Katheter oder Dinoproston, entsprechend dem Protokoll der Einrichtung und der Uterusnarbe.
+
+
+### 2
+
+Mittlerer Muttermund (7 bis 8)
+
+Die Wahrscheinlichkeit einer vaginalen Entbindung nach der Einleitung ist geringer als bei einem günstigen Muttermund; die Zervixvorbereitung individuell anpassen.
+
+
+### 3
+
+Günstiger Muttermund (> 8): Wahrscheinlichkeit einer vaginalen Entbindung ähnlich wie bei spontanem Wehenbeginn
+
+Kann mit Oxytocin und/oder Amniotomie eingeleitet werden.
+
+
+### 4
+
+Günstiger Muttermund (> 8): Wahrscheinlichkeit einer vaginalen Entbindung ähnlich wie bei spontanem Wehenbeginn
+
+Kann mit Oxytocin und/oder Amniotomie eingeleitet werden.
+

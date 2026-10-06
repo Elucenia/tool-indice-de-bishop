@@ -315,7 +315,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Bishop 1964:5 componentes 0–13; apagamento percentual, sem versão comprimento cervical",
-    "implementationVersion": "indice-de-bishop@native-2026-10-03+2ea8b553b045",
+    "implementationVersion": "indice-de-bishop@native-2026-10-05+e86e245c6cb5",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14199536/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -591,7 +591,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+      "implementationHash": "e86e245c6cb570597041eb6d41797d92c00f2747c1d3f86c3f9711552b361941",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-bishop@native-2026-10-03+2ea8b553b045",
+          "previousImplementationHash": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629",
+          "implementationHash": "e86e245c6cb570597041eb6d41797d92c00f2747c1d3f86c3f9711552b361941",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "0da999c187cbce5fcec3b4f63b9cf8a63aad4364902e141d62d32bc57a7a9524",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Bishop clássico descreve preparo cervical pelos cinco componentes do exame e não autoriza, sozinho, indução do parto. O artigo de 1964 estudou contexto histórico de multíparas a partir de 36 semanas; isso não constitui indicação atual de indução eletiva nessa idade. A orientação institucional ACOG consultada exige avaliar indicações e contraindicações obstétricas e não realizar indução eletiva antes de 39 semanas. Esta versão usa apagamento cervical em porcentagem, não uma versão modificada baseada no comprimento cervical.",
     "limitsEvidence": {
@@ -626,20 +654,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-bishop/calculator.js",
-    "bytes": 5222,
-    "sha256": "2ea8b553b0453a0455c71803ea4e5f4653ac3c8b754e0e51b8039744f9349629"
+    "bytes": 5427,
+    "sha256": "e86e245c6cb570597041eb6d41797d92c00f2747c1d3f86c3f9711552b361941"
   },
-  "sourceToolSha256": "8fa2e1f5669841e9f0ac61fc90f2dd8c811ef4eb6ba482b91c1e0f74f7d8ceaf",
+  "sourceToolSha256": "480b227e759bfa5b2331397b4677271a2bd744eb75411ed68ead127105e22b1b",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "7fcc1048ea779fb54d516e166303a458353c77c8aec3ce5b7cbdfb9b691cb79f",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "7fcc1048ea779fb54d516e166303a458353c77c8aec3ce5b7cbdfb9b691cb79f",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
